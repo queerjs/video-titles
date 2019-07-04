@@ -1,14 +1,72 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 .canvas {
 	width: 1920px;
 	height: 1080px;
 	background: #1e1126;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .bow {
-  i dont wanna do thiiis
+	background: linear-gradient(
+		to bottom,
+		#ff5d7d 0%,
+		#ff5d7d 16.6666666667%,
+		#ff764e 16.6666666667%,
+		#ff764e 33.3333333333%,
+		#ffc144 33.3333333333%,
+		#ffc144 50%,
+		#88df8e 50%,
+		#88df8e 66.6666666667%,
+		#00ccf2 66.6666666667%,
+		#00ccf2 83.3333333333%,
+		#b278d3 83.3333333333%,
+		#b278d3 100%
+	);
+}
+
+.canvas .bow {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	width: 10%;
+}
+
+.canvas main {
+	color: #fff;
+	display: flex;
+	font-size: 3em;
+	max-width: 55%;
+}
+
+.canvas main img {
+	height: 6.6em;
+	width: 6.6em;
+	border-radius: 100%;
+	margin-right: 1.5em;
+	flex-shrink: 0;
+}
+
+.canvas h2 {
+	font-family: 'Neutra Text';
+	margin-top: 0.75em;
+	margin-bottom: 0.125em;
+	font-size: 2em;
+}
+
+.canvas h3 {
+	font-family: 'Roboto Mono';
+	font-weight: 400;
+	color: #e6e2ff;
+	font-size: 1.15em;
+}
+
+.canvas .fly {
+	position: absolute;
+	bottom: 1.5em;
+	right: 1.5em;
+	height: 2em;
+	font-size: 3em;
 }

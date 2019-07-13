@@ -33,12 +33,28 @@
 	top: 0;
 	width: 10%;
 }
+.canvas .bow[data-short] {
+	width: 1%;
+}
 
 .canvas main {
 	color: #fff;
 	display: flex;
 	font-size: 3em;
 	max-width: 55%;
+}
+
+.canvas[data-video] main {
+	position: absolute;
+	left: 75%;
+	top: 45%;
+}
+
+.canvas[data-video] main h2 {
+	font-family: 'Roboto Mono';
+	font-weight: 400;
+	color: #e6e2ff;
+	font-size: 0.75em;
 }
 
 .canvas main img {
@@ -65,8 +81,8 @@
 
 .canvas .fly {
 	position: absolute;
-	bottom: 1.5em;
-	right: 1.5em;
+	bottom: 13%;
+	right: 1%;
 	height: 2em;
 	font-size: 3em;
 }
@@ -74,4 +90,25 @@
 x-video,
 x-speaker-video {
 	display: block;
+	width: 1920px;
+	height: 1080px;
+	background: limegreen;
+	position: absolute;
+	z-index: 999999;
+	box-sizing: border-box;
+}
+
+x-video {
+	transform: translateX(2%) scale(0.72);
+	transform-origin: left center;
+	border: 10px solid #fff;
+}
+
+x-speaker-video {
+	width: 1440px;
+	right: 1%;
+	top: 14.6%;
+	transform: scale(0.32);
+	z-index: 999999;
+	transform-origin: right top;
 }

@@ -3,7 +3,7 @@
 to print out the speaker cards do
 
 ```
-node screenys.js
+npm run shoot
 ```
 
-to edit the speakers just edit the file
+to edit the speakers just edit the `speakers.js` file

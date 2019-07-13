@@ -70,3 +70,8 @@
 	height: 2em;
 	font-size: 3em;
 }
+
+x-video,
+x-speaker-video {
+	display: block;
+}

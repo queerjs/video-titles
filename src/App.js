@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import fly from './fly.svg';
 
-const VideoScreen = ({ photo, name, talk }) => {
+const PrerollScreen = ({ photo, name, talk }) => {
 	return (
 		<div className={'canvas'}>
 			<div className="bow" />
@@ -11,6 +11,22 @@ const VideoScreen = ({ photo, name, talk }) => {
 				<div>
 					<h2>{name}</h2>
 					<h3>{talk}</h3>
+				</div>
+			</main>
+			<img src={fly} alt="queerJS" className="fly" />
+		</div>
+	);
+};
+
+const VideoScreen = ({ photo, name, talk }) => {
+	return (
+		<div className={'canvas'}>
+			<div className="bow" data-short />
+			<main>
+				<x-video />
+				<x-speaker-video />
+				<div>
+					<h2>Laura González {name}</h2>
 				</div>
 			</main>
 			<img src={fly} alt="queerJS" className="fly" />

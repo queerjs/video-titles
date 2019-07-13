@@ -1,7 +1,7 @@
 module.exports = [
 	{
-		filename: 'laura',
-		name: 'Laura Gonzalez',
+		filename: 'kate',
+		name: 'Kate Beard',
 		talk: ' typescript made enjoyable',
 		photo:
 			'https://pbs.twimg.com/profile_images/1123259650126774272/KOE88EYU_reasonably_small.jpg',

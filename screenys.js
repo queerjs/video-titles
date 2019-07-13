@@ -1,7 +1,5 @@
 const puppeteer = require('puppeteer');
 const speakorz = require('./speakers');
-const fs = require('fs');
-const PNG = require('pngjs').PNG;
 
 const shot = async (out, { filename, ...data }) => {
 	const browser = await puppeteer.launch();

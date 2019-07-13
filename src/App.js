@@ -8,10 +8,7 @@ const PrerollScreen = ({ photo, name, talk }) => {
 			<div className="bow" />
 			<main>
 				<img alt="" src={photo} />
-				<div>
-					<h2>{name}</h2>
-					<h3>{talk}</h3>
-				</div>
+				<h2>{name}</h2>
 			</main>
 			<img src={fly} alt="queerJS" className="fly" />
 		</div>
@@ -25,9 +22,7 @@ const VideoScreen = ({ name }) => {
 			<x-video />
 			<x-speaker-video />
 			<main>
-				<div>
-					<h2>{name}</h2>
-				</div>
+				<h2>{name}</h2>
 			</main>
 			<img src={fly} alt="queerJS" className="fly" />
 		</div>

@@ -7,7 +7,9 @@ const PrerollScreen = ({ photo, name, talk }) => {
 		<div className={'canvas'} data-preroll>
 			<div className="bow" />
 			<main>
-				<img alt="" src={photo} />
+				{
+					photo !== '' ? <img alt="" src={photo} /> : null
+				}
 				<h2>{name}</h2>
 			</main>
 			<img src={fly} alt="queerJS" className="fly" />
